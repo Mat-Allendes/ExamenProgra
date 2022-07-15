@@ -1,0 +1,324 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}INICIO | EWDLT{% endblock %}
+
+{% block carousel %}
+    <!-- CAROUSEL DE PRODUCTOS -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{%static 'core/images/slider_tabacos.jpg'%}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{%static 'core/images/slider_accesorios.jpg'%}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{%static 'core/images/slider_zippo.jpg'%}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+        <!--PRODUCTOS-->
+        <section class="productos" id="producto">
+
+            <div class="box-container">
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="{%static 'core/images/Lucky Blue de 10 2500.jpg'%}" alt="">
+                        <div class="iconos">
+                            <a href="#" class="fa fa-cart-plus"></a>
+                            <a href="#" class="fas fa fa-share"></a>
+                        </div>
+                    </div>
+    
+                    <div class="contenido">
+                        <h3>Lucky Strike Blue 10 uni </h3>
+                        <div class="precio">$2.500</div>
+                    </div>
+                </div>
+        
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="{%static 'core/images/Lucky Click Frost de 20 4600.jpg'%}" alt="">
+                        <div class="iconos">
+                            <a href="#" class="fa fa-cart-plus"></a>
+                            <a href="#" class="fas fa fa-share"></a>
+                        </div>
+                    </div>
+    
+                    <div class="contenido">
+                        <h3>Lucky Strike Click Frost 20 uni</h3>
+                        <div class="precio">$4600</div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="{%static 'core/images/Lucky Crush de 10 2700.jpg'%}" alt="">
+                        <div class="iconos">
+                            <a href="#" class="fa fa-cart-plus"></a>
+                            <a href="#" class="fas fa fa-share"></a>
+                        </div>
+                    </div>
+    
+                    <div class="contenido">
+                        <h3>Lucky Strike Crush 10 uni</h3>
+                        <div class="precio">$2.700</div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="{%static 'core/images/Lucky Fresh Twish de 20 4700.jpg'%}" alt="">
+                        <div class="iconos">
+                            <a href="#" class="fa fa-cart-plus"></a>
+                            <a href="#" class="fas fa fa-share"></a>
+                        </div>
+                    </div>
+    
+                    <div class="contenido">
+                        <h3>Lucky Strike Fresh Twish 20 uni</h3>
+                        <div class="precio">$4.700</div>
+                    </div>
+                </div>
+    
+            
+                <div class="box">
+                    <div class="image">
+                        <img src="{%static 'core/images/Lucky Rojo de 20 4000.jpg'%}" alt="">
+                        <div class="iconos">
+                            <a href="#" class="fa fa-cart-plus"></a>
+                            <a href="#" class="fas fa fa-share"></a>
+                        </div>
+                    </div>
+    
+                    <div class="contenido">
+                        <h3>Lucky Strike Rojo 20 uni</h3>
+                        <div class="precio">$4.000</div>
+                    </div>
+                </div>
+    
+                
+                <div class="box">
+                    <div class="image">
+                        <img src="{%static 'core/images/Lucky Wild de 10 2700.jpg'%}" alt="">
+                        <div class="iconos">
+                            <a href="#" class="fa fa-cart-plus"></a>
+                            <a href="#" class="fas fa fa-share"></a>
+                        </div>
+                    </div>
+    
+                    <div class="contenido">
+                        <h3>Lucky Strike Wild 10 uni</h3>
+                        <div class="precio">$2.700</div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="{%static 'core/images/Pallmall rojo de 20 3200.jpg'%}" alt="">
+                        <div class="iconos">
+                            <a href="#" class="fa fa-cart-plus"></a>
+                            <a href="#" class="fas fa fa-share"></a>
+                        </div>
+                    </div>
+    
+                    <div class="contenido">
+                        <h3>PallMall Rojo 20 uni</h3>
+                        <div class="precio">$3.200</div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="{%static 'core/images/Pallmall menta de 20 3400.jpg'%}" alt="">
+                        <div class="iconos">
+                            <a href="#" class="fa fa-cart-plus"></a>
+                            <a href="#" class="fas fa fa-share"></a>
+                        </div>
+                    </div>
+    
+                    <div class="contenido">
+                        <h3>PallMall Menta 20 uni</h3>
+                        <div class="precio">$3.400</div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="{%static 'core/images/Pallmall sunset de 20 3400.jpg'%}" alt="">
+                        <div class="iconos">
+                            <a href="#" class="fa fa-cart-plus"></a>
+                            <a href="#" class="fas fa fa-share"></a>
+                        </div>
+                    </div>
+    
+                    <div class="contenido">
+                        <h3>PallMall Sunset 20 uni</h3>
+                        <div class="precio">$3.400</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="{%static 'core/images/Pallmall azul click de 20 3500.jpg'%}" alt="">
+                        <div class="iconos">
+                            <a href="#" class="fa fa-cart-plus"></a>
+                            <a href="#" class="fas fa fa-share"></a>
+                        </div>
+                    </div>
+    
+                    <div class="contenido">
+                        <h3>PallMall Azul Click 20 uni</h3>
+                        <div class="precio">$3.500</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="{%static 'core/images/Pallmall gris de 10 1800.png'%}" alt="">
+                        <div class="iconos">
+                            <a href="#" class="fa fa-cart-plus"></a>
+                            <a href="#" class="fas fa fa-share"></a>
+                        </div>
+                    </div>
+    
+                    <div class="contenido">
+                        <h3>PallMall Gris 10 uni</h3>
+                        <div class="precio">$1.800</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="{%static 'core/images/Kent tube blue de 20 4000.jpg'%}" alt="">
+                        <div class="iconos">
+                            <a href="#" class="fa fa-cart-plus"></a>
+                            <a href="#" class="fas fa fa-share"></a>
+                        </div>
+                    </div>
+    
+                    <div class="contenido">
+                        <h3>Kent Tube Blue 20 uni</h3>
+                        <div class="precio">$4.000</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="{%static 'core/images/Kent actron de 20 4700.jpg'%}" alt="">
+                        <div class="iconos">
+                            <a href="#" class="fa fa-cart-plus"></a>
+                            <a href="#" class="fas fa fa-share"></a>
+                        </div>
+                    </div>
+    
+                    <div class="contenido">
+                        <h3>Kent Actron 20 uni</h3>
+                        <div class="precio">$4.700</div>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="image">
+                        <img src="{%static 'core/images/Kent belmont de 10 2200.jpg'%}" alt="">
+                        <div class="iconos">
+                            <a href="#" class="fa fa-cart-plus"></a>
+                            <a href="#" class="fas fa fa-share"></a>
+                        </div>
+                    </div>
+    
+                    <div class="contenido">
+                        <h3>Kent Belmont 10 uni</h3>
+                        <div class="precio">$2.200</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="{%static 'core/images/Kent click de 20 4200.jpg'%}" alt="">
+                        <div class="iconos">
+                            <a href="#" class="fa fa-cart-plus"></a>
+                            <a href="#" class="fas fa fa-share"></a>
+                        </div>
+                    </div>
+    
+                    <div class="contenido">
+                        <h3>Kent Click 20 uni</h3>
+                        <div class="precio">$4.200</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="{%static 'core/images/Kent iBoost de 20 4200.jpg'%}" alt="">
+                        <div class="iconos">
+                            <a href="#" class="fa fa-cart-plus"></a>
+                            <a href="#" class="fas fa fa-share"></a>
+                        </div>
+                    </div>
+    
+                    <div class="contenido">
+                        <h3>Kent iBoost 20 uni</h3>
+                        <div class="precio">$4.200</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="{%static 'core/images/Kent Ikon mix de 20 3700.jpg'%}" alt="">
+                        <div class="iconos">
+                            <a href="#" class="fa fa-cart-plus"></a>
+                            <a href="#" class="fas fa fa-share"></a>
+                        </div>
+                    </div>
+    
+                    <div class="contenido">
+                        <h3>Kent Ikon Mix 20 uni</h3>
+                        <div class="precio">$3.700</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="{%static 'core/images/Kent white up de 20 5890.jpg'%}" alt="">
+                        <div class="iconos">
+                            <a href="#" class="fa fa-cart-plus"></a>
+                            <a href="#" class="fas fa fa-share"></a>
+                        </div>
+                    </div>
+    
+                    <div class="contenido">
+                        <h3>Kent White up 20 uni</h3>
+                        <div class="precio">$5.890</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="{%static 'core/images/Kent silver up de 20 5890.jpg'%}" alt="">
+                        <div class="iconos">
+                            <a href="#" class="fa fa-cart-plus"></a>
+                            <a href="#" class="fas fa fa-share"></a>
+                        </div>
+                    </div>
+    
+                    <div class="contenido">
+                        <h3>Kent Silver 20 uni</h3>
+                        <div class="precio">$5.890</div>
+                    </div>
+                </div>
+        </section>
+{% endblock %}

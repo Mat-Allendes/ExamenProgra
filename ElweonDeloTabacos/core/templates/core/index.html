@@ -1,0 +1,136 @@
+{% extends 'core/base.html'%}
+
+{% load static %}
+
+{% block title %}INICIO | EWDLT{% endblock %}
+
+{% block carousel %}
+    <!-- CAROUSEL DE PRODUCTOS -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'core/images/slider_tabacos.jpg'%}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'core/images/slider_accesorios.jpg'%}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'core/images/slider_zippo.jpg'%}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+    <!--PRODUCTOS DESTACADOS-->
+
+    <section class="productos" id="producto">
+
+        <h1> Nuestros Productos Destacados</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'core/images/Bristol original.png'%}" alt="">
+                    <div class="iconos">
+
+                        <a href="#" class="fa fa-cart-plus"></a>
+                        <a href="#" class="fas fa fa-share"></a>
+                    </div>
+                </div>
+
+                <div class="contenido">
+                    <h3 class="blancos">Bristol Original </h3>
+                    <div class="precio">$6.000</div>
+                </div>
+            </div>
+    
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'core/images/Filtro OCB Slim 6mm 10x120.jpg'%}" style="height: 300px;">
+                    <div class="iconos">
+                        <a href="#" class="fa fa-cart-plus"></a>
+                        <a href="#" class="fas fa fa-share"></a>
+                    </div>
+                </div>
+
+                <div class="contenido">
+                    <h3 class="blancos">Filtro OCB Slim 6mm 10x120</h3>
+                    <div class="precio">$5.290</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'core/images/Lucky Fresh Twish de 20 4700.jpg'%}" alt="">
+                    <div class="iconos">
+                        <a href="#" class="fa fa-cart-plus"></a>
+                        <a href="#" class="fas fa fa-share"></a>
+                    </div>
+                </div>
+
+                <div class="contenido">
+                    <h3 class="blancos">Lucky Fresh Twish</h3>
+                    <div class="precio">$4.700</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'core/images/Papelillos OCB Premium 1 7mm 50 libritos de 50 hojas.png'%}" alt="">
+                    <div class="iconos">
+                        <a href="#" class="fa fa-cart-plus"></a>
+                        <a href="#" class="fas fa fa-share"></a>
+                    </div>
+                </div>
+
+                <div class="contenido">
+                    <h3 class="blancos">OCB Premium 1x7mm 50 uni</h3>
+                    <div class="precio">$1.500</div>
+                </div>
+            </div>
+
+        
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'core/images/Kent Ikon mix de 20 3700.jpg'%}" alt="">
+                    <div class="iconos">
+                        <a href="#" class="fa fa-cart-plus"></a>
+                        <a href="#" class="fas fa fa-share"></a>
+                    </div>
+                </div>
+
+                <div class="contenido">
+                    <h3 class="blancos">Kent Ikon mix</h3>
+                    <div class="precio">$3.700</div>
+                </div>
+            </div>
+
+            
+            <div class="box">
+                <span class="descuento">-15%</span>
+                <div class="image">
+                    <img src="{% static 'core/images/Tennesie-American-Blend.png' %}" alt="">
+                    <div class="iconos">
+                        <a href="#" class="fa fa-cart-plus"></a>
+                        <a href="#" class="fas fa fa-share"></a>
+                    </div>
+                </div>
+
+                <div class="contenido">
+                    <h3 class="blancos">Tennesie American Blend</h3>
+                    <div class="precio">$5.780<span>$6.800</span></div>
+                </div>
+            </div>
+   
+    </section>
+{% endblock %}

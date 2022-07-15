@@ -1,0 +1,87 @@
+{% extends 'core/base.html'%}
+
+{% load static %}
+
+{% block title %}INICIO | EWDLT{% endblock %}
+
+{% block carousel %}
+    <!-- CAROUSEL DE PRODUCTOS -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'core/images/slider_tabacos.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'core/images/slider_accesorios.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'core/images/slider_zippo.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+    </div>
+{% endblock %}
+
+<!--MAIN-->
+{% block content %}
+    <main>
+        <div class="col-12 text-center">
+            <h1>Sobre Nosotros</h1>
+        </div>
+        <div class="col-12 page">
+            <div class="page-body">
+                <h3>Bienvenidos a El Weon De Los Tabacos!!</h3>
+                <h3>El Weon De Los Tabacos es un comercio 100% online Para Chile,  dedicado a la importación, distribución y venta de productos para consumidores de tabaco.</h3>
+                <h3>Marcas como Mac Baren, Zippo, OCB, Gihez, Raw, Amsterdamer, Pueblo, Flor de canaria, Balmoral, Tennesie, buccaner, Virginia blend, Panter, club master, Amphora, The Bulldog, Elements y Blunt Wrap formar parte de nuestras distribuciones.</h3>
+                <h3>El mejor precio, somos la mejor tabaqueria de Chile.</h3>
+                <h3>En El Weon De Los Tabacos usted podrá comprar al por Mayor o al Detalle productos de calidad al mejor precio. Para ello importamos directamente desde la India, Nepal, Tibet, China, Francia, Alemania y otros paices, productos exclusivos y de reconocidas marcas.</h3>
+                <h3>¡ Muchas gracias por su visita !</h3>
+            </div>
+        </div>
+
+        <!--PRODUCTOS-->
+        <section class="productos" id="producto">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <div class="image">
+                        <img src="{% static 'core/images/Gosu.jpeg'%}" alt="">
+                    </div>
+
+                    <div class="contenido">
+                        <h3>Benjamín Guzmán</h3>
+                        <div class="precio">informático apasionado de la programación, el tabaco y mi trabajo van de la mano y por ello pretendo proveer del mejor tabaco que exista. </div>
+                    </div>
+                </div>
+        
+
+                <div class="box">
+                    <div class="image">
+                        <img src="{% static 'core/images/Dempsy.jpeg'%}" alt="">
+                    </div>
+
+                    <div class="contenido">
+                        <h3>Augusto Alonso</h3>
+                        <div class="precio"> informático versátil, mi intensión es hacer llegar los productos de mejor calidad a las personas.</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="{% static 'core/images/Mati.jpeg'%}" alt="">
+                    </div>
+
+                    <div class="contenido">
+                        <h3>Matias Allendes</h3>
+                        <div class="precio">joven informático aplicado y estudioso, amante del buen tabaco con metas y proyectos claros.</div>
+                    </div>
+                </div>
+            </section>        
+    </main>
+{% endblock %}

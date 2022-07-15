@@ -27,7 +27,7 @@ def suscripcion(request):
 
 def registro(request):
     if request.method=='POST':
-        print('pichula')
+        print('probando')
         #usernew=User.objects.create_user(username=request.POST['email'],email=request.POST['email'],password=request.POST['password'],first_name=request.POST['first_name'],last_name=request.POST['last_name'])
         #pepote=registro.objects.create(rut='20986847-1',fecha='1998-08-03',num=987654321,direccion='avenida asbdbasidco',id_Reg_id=usernew.id)
         #print(usernew)
